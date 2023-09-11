@@ -18,7 +18,7 @@ def get_requirements(file_path:str)->List(str):
 setup(
     name='Forecasting',
     version='0.0.1',
-    author="SaikrishnaParamkusham",
+    author="Saikrishna Paramkusham",
     author_email="paramkusham.saikrishna@outlook.com",
     packages=find_packages,
     install_requires=get_requirements('requirements.txt')

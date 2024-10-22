@@ -38,7 +38,7 @@ for each_dataframe, df in turnover_dict.items():
 
   turnover_dict[each_dataframe] = df
 
-df_marketcap = marketcap_dict["21000018"]
+df_marketcap = marketcap_dict[""]
 df_marketcap
 
 df_marketcap['year_month'] = df_marketcap['tradedate'].dt.to_period('M')
@@ -46,7 +46,7 @@ df_marketcap.sort_values(by = 'year_month', inplace = True)
 
 df_marketcap = df_marketcap.groupby(['year_month']).agg({'euroMarketCap':"mean"})
 
-df_turnover = turnover_dict["21000018"]
+df_turnover = turnover_dict[""]
 df_turnover
 
 df_turnover['year_month'] = df_turnover['effectivedate'].dt.to_period('M')
